@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html manifest="cache.manifest">
+<!--		Designer: Rory McLeish at Winchester University, Digital Media Design, DMD12	(shinyrory@gmail.com)		--><!--		Developers : Andrew "Tez" Grant (tez.grant@gmail.com) and Sean Duffy (sean1906@gmail.com)					--><!--		Date : 14/03/2012													 										--><!--		All code (c) 2012 Sean Duffy and Andrew "Tez" Grant. all rights reserved									--><!--		Design (c) 2012 Rory McLeish. all rights reserved															-->	<head>
+<title>RNLI</title>
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jQuizMe.js"></script>
+<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />	
+<link rel="apple-touch-icon" href="images/ICON.png">	
+<meta name="apple-mobile-web-app-capable" content="yes">	
+<link rel="apple-touch-startup-image" href="images/SPLASH.png">	
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script type="text/javascript">
+YUI().use("scrollview", function(Y) {
+
+    var scrollview = new Y.ScrollView({
+        srcNode:"#content",
+        height:"20em"
+    });
+
+});
+</script>
+</head>
+
+<body>
+	<div id="header"><img align="right" id="headflag" src="images/sprite.png"/><img align="left" id="logo" src="images/logohead.png"/>Multiple Choice Quiz, Core Questions</div>
+	<div id="content">
+	<div id="frame">
+	<div data-role="page">
+<div id="quizArea"/>
+
+<script type="text/javascript">
+ 
+$( function($){
+	var quizMulti = {
+    multiList:
+	[	
+		/* Core Questions */
+			{ ques: "The Golden hour is:", ans: "The optimum time for survival from traumatic injury to arrival at surgery", ansSel : [ "The time it takes a patient to call for help and for help to arrive", "The time at which the injury occurs", "A unit of time named after James Golden RN Surgeon" ] },
+			{ ques: "Mechanism of Injury helps when thinking about", ans: "All these options", ansSel : [ "Injury patterns", "Scene safety", "Hidden injuries" ] },
+			{ ques: "Patient assessment - DR(c)ABCDE: What does the first D stand for?", ans: "Dangers", ansSel : [ "Deformity", "Diagnosis", "Disability" ] },
+			{ ques: "At the first stage of patient assessment (D) what might some of your considerations be:", ans: "All these options", ansSel : [ "Crowds", "Electricity", "Traffic" ] },
+			{ ques: "When approaching the scene of an incident, your safety is more important than anyone else.", ans: "True", ansSel : [ "False" ] },
+			{ ques: "At the second stage of patient assessment (R).  What does the P stand for in the AVPU scale?", ans: "Patient responds to a painful stimulus", ansSel : [ "Patient needs pressure applied to a wound", "Patient complains of pain", "Patient has passed out" ] },
+			{ ques: "At the third stage of patient assessment (c) the casualty carer must:", ans: "Control any life threatening bleed", ansSel : [ "Check for a pulse", "Call for help", "Check peripheral capillary refill (fingernail)" ] },
+			{ ques: "The most common cause of airway obstruction in an unconscious patient is the tongue.", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Whilst assessing the airway you hear the patient snoring. This means:", ans: "Tongue obstructing airway", ansSel : [ "Fluid in the airway", "Patient has asthma", "Patient is asleep and requires a blanket" ] },
+			{ ques: "Opening the airway with a 'jaw thrust' is best for immersed patients with no injuries", ans: "False", ansSel : [ "True" ] },
+			{ ques: "The patients breathing rate should be checked for:", ans: "10 seconds", ansSel : [ "2 seconds", "5 seconds", "1 minute" ] },
+			{ ques: "If you find that the patient is not breathing (only one patient - no requirement for triage), you should:", ans: "Commence CPR", ansSel : [ "Declare them dead", "Move onto the C stage of the assessment process", "Turn them into the recovery position" ] },
+			{ ques: "Which breathing rate (in a minute) would indicate Big Sick?", ans: "36", ansSel : [ "12", "24", "All these options" ] },
+			{ ques: "In a warm environment, a central capillary refill of 4 secs means:", ans: "The patient is Big Sick", ansSel : [ "The heart has stopped", "It means nothing", "The patient is Little Sick" ] },
+			{ ques: "On the head to toe examination you find the patient is pale, cold and clammy. What could this mean?", ans: "All these options", ansSel : [ "They may have a heart problem", "They may be bleeding somewhere", "They may be Big Sick" ] },
+			{ ques: "When asking the patient for a history using AMPLE, the P stands for:", ans: "Past relevant medical history", ansSel : [ "Pain experienced by the patient", "Pulse rate", "Poisons taken" ] },
+			{ ques: "What category would you place a patient in during a triage sieve who is unconscious with respiration rate of 24 breaths per minute and capillary refill time of 5 seconds?", ans: "P1", ansSel : [ "P2", "P3", "Dead(P4)" ] },
+			{ ques: "Oxygen should be administered for which of the following casualties:", ans: "All these options", ansSel : [ "Unconscious casualty", "Non-breathing casualty", "A casualty with cap refill delayed to 6 seconds" ] },
+			{ ques: "It doesn't matter if the Oxygen cylinder becomes contaminated with salt water?", ans: "False", ansSel : [ "True" ] },
+			{ ques: "When should you consider using a plastic (OP/guedel) airway?", ans: "All these options", ansSel : [ "An unconscious patient without a gag reflex", "A non- breathing casualty needing CPR", "An unconscious patient needing ventilatory support (assisted breathing)" ] },
+			{ ques: "A plastic (OP/guedel) airway is sized by measuring:", ans: "From the corner of the mouth to the lower ear", ansSel : [ "From the front teeth to the Adams apple", "The length of the patients thumb", "The length of patient's tongue" ] },
+			{ ques: "Which of these statements is correct about adult CPR?", ans: "100 -120 compressions / min, ratio 30comp: 2 breaths, depth 5-6 cm", ansSel : [ "100 -120 compressions / min, ratio 30comp: 2 breaths, depth 3-4 cm", "80 - 100 compressions / min, ratio 30comp: 2 breaths, depth 10 cm", "80 - 100 compressions / min, ratio 15comp: 2 breaths, depth 4-5 cm" ] },
+			{ ques: "What is the most important consideration in the care of an unconscious casualty?", ans: "Maintaining an airway", ansSel : [ "Keeping them warm", "Talking to them", "Checking central capillary refill" ] }, 
+			{ ques: "Which is a Little Sick marker?", ans: "Respiration rate of 2 breaths in 10 seconds", ansSel : [ "P on AVPU scale", "Blue skin colour", "Central capillary refill time of 3 seconds" ] },
+			{ ques: "Which is a Big Sick marker?", ans: "V on the AVPU scale", ansSel : [ "Central capillary refill of 2 seconds", "Pink skin colour", "Respiration rate of 24 in a minute" ] },
+		/*Core picture questions*/
+			{ ques: "What piece of equipment is missing from this picture?", ans: "Personal Protective Equipment", ansSel : [ "Trauma dressing", "Sea sickness tablets", "Fracture straps" ], image: "images/media/CS4.JPG" },
+			{ ques: "Which manual airway manoeuvre is being used here?", ans: "Head tilt chin lift", ansSel : [ "Recovery position", "Jaw thrust", "None" ], image: "images/media/CS18.JPG" },
+			{ ques: "Opening the airway with the technique demonstrated is NOT good for which type of patient?", ans: "Injured patients", ansSel : [ "Immersion patients", "Illness patients", "All patients" ], image: "images/media/CS18.JPG" },
+			{ ques: "Which manual airway manoeuvre is being used here?", ans: "Jaw thrust", ansSel : [ "Recovery position", "None", "Head tilt chin lift" ], image: "images/media/CS21.JPG" },
+			{ ques: "Opening the airway with the technique demonstrated is good for which type of patient?", ans: "Injured patients", ansSel : [ "All patients", "Illness patients", "Immersion Patients" ], image: "images/media/CS21.JPG" },
+			{ ques: "The measuring points used for sizing a plastic airway for a patient are :- ", ans: "Corner of mouth to lower ear", ansSel : [ "Length of patient's tongue", "Size of patient's thumb", "Corner of jaw to mouth" ], image: "images/media/CS16.JPG" },
+			{ ques: "When using the handheld suction on a patient, a clear view of the airway and end of the suction catheter  is required:", ans: "True", ansSel : [ "False" ], image: "images/media/CS10.JPG" },
+			{ ques: "What are the crew members checking in this picture?", ans: "Breathing rate", ansSel : [ "Central capillary refill", "Extremity capillary refill", "Airway " ], image: "images/media/CS5.JPG" },
+			{ ques: "Putting one hand on the abdominal area can assist with obtaining a breathing rate", ans: "True", ansSel : [ "False" ], image: "images/media/CS5.JPG" },
+			{ ques: "What are the crew members checking in this picture?", ans: "Central capillary refill", ansSel : [ "Breathing rate", "Extremity capillary refill", "Airway " ], image: "images/media/CS20.JPG" },
+			{ ques: "Oxygen should be given to all patients.", ans: "False", ansSel : [ "True" ], image: "images/media/CS26.JPG" },
+			{ ques: "What piece of kit is being used in the picture?", ans: "Free flow mask", ansSel : [ "Bag valve mask", "Plastic airway", "Handheld suction unit" ], image: "images/media/CS26.JPG" },
+			{ ques: "What does the card shown relate to", ans: "Patient's medical history", ansSel : [ "Recording drugs given by casualty carer", "Treatment guidelines", "Big 3 monitoring" ], image: "images/media/CS12.JPG" },
+			{ ques: "How often should the Big 3 be monitored in a little sick patient?", ans: "Every 5 - 10 minutes ", ansSel : [ "Every minute", "Every 2 - 3 minutes", "Every 3 - 5 minutes" ], image: "images/media/CS2.JPG" },
+			{ ques: "How often should the Big 3 be monitored in a big sick patient?", ans: "Every 2 minutes", ansSel : [ "Every minute", "Every 3 minutes", "Every 5 minutes" ], image: "images/media/CS2.JPG" },
+			{ ques: "When using the bag valve mask on a patient how is a good seal (the mask over the nose and mouth) achieved?", ans: "Using a 'C' grip with finger and thumb ", ansSel : [ "Pushing it down forcefully onto the face", "Lightly placing near the mouth and nose", "It does not need a good seal" ], image: "images/media/CS17.JPG" },
+			{ ques: "The bag valve mask is also used for patients who require assisted breathing", ans: "True", ansSel : [ "False" ], image: "images/media/CS22.JPG" },
+			{ ques: "When administering chest compressions on a child, you should use one hand.", ans: "True", ansSel : [ "False" ], image: "images/media/CS29.JPG" },
+			{ ques: "When administering chest compressions on a baby, you should use one hand.", ans: "False", ansSel : [ "True" ], image: "images/media/CS31.JPG" },
+			{ ques: "When using the bag valve mask you should", ans: "Squeeze until the first rise of the chest and then release.", ansSel : [ "Use your knee to get required amount of air into the patient", "Always use two hands to squeeze it", "Squeeze the bag as forcefully as you can" ], image: "images/media/CS30.JPG" }
+			
+			
+			
+	]
+		};
+	
+	options = {
+		showHTML: true,
+		animationType: 0,
+		showWrongAns: true,
+		title: ""
+};
+
+$("#quizArea").jQuizMe(quizMulti, options);
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+
+		<div id="menu" class="menu">
+			<ul>
+			<a href="mcq.html"><li id="mcqbutton" class="menubutton"><img src="images/quizicon_sml.png"/></li></a>
+			<a href="triage.html"><li id="triagebutton" class="menubutton"><img src="images/triageicon_sml.png"/></li></a>
+			<a href="pa/pa-home.html"><li id="patbutton" class="menubutton"><img src="images/assessmenticon_sml.png"/></li></a>
+			<a href="kit/kit-home.html"><li id="kitbutton" class="menubutton"><img src="images/bagicon_sml.png"/></li></a>
+			<a href="numbers.html"><li id="numbersbutton" class="menubutton"><img src="images/infoicon_sml.png"/></li></a>
+			</ul>
+		</div>
+</body>
+</html>

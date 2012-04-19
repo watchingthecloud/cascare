@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html manifest="cache.manifest?v=4">
+	<!--		Designer: Rory McLeish at Winchester University, Digital Media Design, DMD12	(shinyrory@gmail.com)		--><!--		Developers : Andrew "Tez" Grant (tez.grant@gmail.com) and Sean Duffy (sean1906@gmail.com)					--><!--		Date : 14/03/2012													 										--><!--		All code (c) 2012 Sean Duffy and Andrew "Tez" Grant. all rights reserved									--><!--		Design (c) 2012 Rory McLeish. all rights reserved															-->	<head>
+		<title>RNLI</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="scripts/jquery-1.6.4.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.3.2.js"></script>
+		<script type="text/javascript">
+			var jQuery_1_3_2 = jQuery.noConflict(true);
+		</script>
+		<script type="text/javascript" src="scripts/jQuizMe.js"></script>
+		<script src="scripts/yui-min.js"></script>
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />	
+		<link rel="apple-touch-icon" href="images/ICON.png">	
+		<meta name="apple-mobile-web-app-capable" content="yes">	
+		<link rel="apple-touch-startup-image" href="images/SPLASH.png">	
+		<script type="text/javascript">
+			YUI().use("scrollview", function(Y) {
+			var scrollview = new Y.ScrollView({
+			srcNode:"#content",
+			height:"20em"
+			});
+			});
+		</script>
+	</head>
+	<body>
+			<div id="header">
+				<img align="left" id="headflag" src="images/sprite.png"/>
+				<img align="right" id="logo" src="images/logo.png"/>
+				Multiple Choice Quiz, Core Questions
+			</div>
+			<div id="content">
+				<div id="frame">
+<!-------------------------------------- active view ----------------------------------------->
+					<div id="quizArea"/>
+<script type="text/javascript">
+	jQuery_1_3_2( function(jQuery_1_3_2){
+	var quizMulti = {
+    multiList:
+	[	
+		/*Illness questions*/
+			{ ques: "A patient suffering non traumatic cardiac chest pain with no previous history should", ans: "All options", ansSel : [ "Be given 300mg Aspirin", "Be given Entonox", "Be given GTN spray" ] },
+			{ ques: "What is the best position for a patient suffering non traumatic cardiac chest pain?", ans: "The W position and kept head up", ansSel : [ "The tripod position, standing leaning forwards", "Head up in the Neil Robertson", "Head down in the Orange basket stretcher" ] },
+			{ ques: "Entonox can be given to a patient suffering with non traumatic cardiac chest pain:", ans: "True", ansSel : [ "False" ] },
+			{ ques: "The best position for a patient suffering with asthma is laying down", ans: "False", ansSel : [ "True" ] },
+			{ ques: "A patient suffering an asthma attack should:", ans: "Be encouraged to take their own medication", ansSel : [ "Not be allowed to take their own medication", "Be given Entonox", "Be given Aspirin" ] },
+			{ ques: "An unconscious ill patient can be given glucose gel. ", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Anaphylactic shock is caused by: ", ans: "Allergic reaction", ansSel : [ "Blood loss", "Brain injury", "Spinal cord injury" ] },
+			{ ques: "A severe allergic reaction can cause the patient to look red, flushed and swollen.", ans: "True", ansSel : [ "False" ] },
+			{ ques: "A recently surfaced diver complains of a deep dull shoulder ache, and asks for some form of painkiller. Do you:", ans: "Offer Oxygen", ansSel : [ "Offer Aspirin", "Offer Entonox", "Offer Paracetamol" ] },
+			{ ques: "A diver who shows symptoms of decompression sickness (the bends) but is Little Sick on assessment should be transported:", ans: "As level as possible on a stretcher", ansSel : [ "Head up on a stretcher", "Head down on a stretcher", "It doesn't matter as he is Little Sick" ] },
+			{ ques: "A patient who is 'fitting' should be advised to go to hospital if:", ans: "All options", ansSel : [ "The fit lasts more than five minutes", "It is their first ever fit", "If they have repeated fits" ] },
+			{ ques: "After a fit, an epileptic patient will always recover very quickly", ans: "False", ansSel : [ "True" ] },
+		/*illness picture questions*/
+			{ ques: "Little sick divers should be kept level and administered oxygen", ans: "True", ansSel : [ "False" ], image: "images/media/ILL31.JPG" },
+			{ ques: "If a diver who is suffering with decompression sickness(the bends) and is little sick, but feels better with oxygen you can stop casualty care treatment", ans: "False", ansSel : [ "True" ], image: "images/media/ILL31.JPG" },
+			{ ques: "Bleeding from the nose in a rapidly surfaced diver can be due to:", ans: "Barotrauma of the lungs (e.g. popped lungs)", ansSel : [ "Decompression sickness", "Cardiac chest pain", "Drowning" ], image: "images/media/ILL33.JPG" },
+			{ ques: "What position has the patient in the picture adopted?", ans: "Tripod", ansSel : [ "'W' position", "Slumped", "Prone (lying face down)" ], image: "images/media/ILL29.JPG" },
+			{ ques: "A patient suffering with shortness of breath due to their asthma, should be treated with:", ans: "Oxygen via free flow mask if big sick ", ansSel : [ "Oxygen via free flow mask at all times", "Entonox via self administration", "Nothing, they will improve on own" ], image: "images/media/ILL29.JPG" },
+			{ ques: "A diabetic patient may appear drowsy and pale in colour.", ans: "True", ansSel : [ "False" ], image: "images/media/ILL34.JPG" },
+			{ ques: "A stroke patient may appear drowsy and pale.", ans: "False", ansSel : [ "True" ], image: "images/media/ILL34.JPG" },
+			{ ques: "The position adopted by the patient in the picture is called:", ans: "'W' position", ansSel : [ "Tripod", "Slumped", "Prone (lying face down)" ], image: "images/media/ILL36.JPG" },
+			{ ques: "The patient is complaining of non traumatic (not injured) chest pain and has a capillary refill of >3 seconds.  What treatment card may help?", ans: "Card 5", ansSel : [ "Card 6", "Card 7", "Card 11" ], image: "images/media/ILL36.JPG" },
+			{ ques: "Look at the patient in the picture, they are swollen with a breathing rate of 36 bpm and a capillary refill of 4 seconds.  What might they be suffering with?", ans: "Allergic reaction", ansSel : [ "Asthma", "Cardiac chest pain", "Epilepsy" ], image: "images/media/ILL35.JPG" },
+			{ ques: "When a patient is fitting, what is your main priority?", ans: "Protecting them from injuring themselves", ansSel : [ "Maintaining an airway", "Keeping hold of them until fit ends", "Giving them a cup of tea" ], image: "images/media/ILL37.JPG" },
+			
+	]
+		};
+	
+	options = {
+		showHTML: true,
+		animationType: 0,
+		showWrongAns: true,
+		title: ""
+};
+
+jQuery_1_3_2("#quizArea").jQuizMe(quizMulti, options);
+});
+</script>
+					
+					</div>
+				</div>
+					
+			<div id="menu" class="menu">
+				<ul>
+					<a href="mcq.html"><li id="mcqbutton" class="menubutton"><img src="images/quizicon_sml.png"/></li></a>
+					<a href="triage.html"><li id="triagebutton" class="menubutton"><img src="images/triageicon_sml.png"/></li></a>
+					<a href="pa/pa-home.html"><li id="patbutton" class="menubutton"><img src="images/assessmenticon_sml.png"/></li></a>
+					<a href="kit/kit-home.html"><li id="kitbutton" class="menubutton"><img src="images/bagicon_sml.png"/></li></a>
+					<a href="numbers.html"><li id="numbersbutton" class="menubutton"><img src="images/infoicon_sml.png"/></li></a>
+				</ul>
+			</div>		
+	</body>
+</html>

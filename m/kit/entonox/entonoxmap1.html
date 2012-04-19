@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+	<!--		Designer: Rory McLeish at Winchester University, Digital Media Design, DMD12	(shinyrory@gmail.com)		--><!--		Developers : Andrew "Tez" Grant (tez.grant@gmail.com) and Sean Duffy (sean1906@gmail.com)					--><!--		Date : 14/03/2012													 										--><!--		All code (c) 2012 Sean Duffy and Andrew "Tez" Grant. all rights reserved									--><!--		Design (c) 2012 Rory McLeish. all rights reserved															-->	<head>
+		<link rel="stylesheet" type="text/css" href="../map.css">
+		<link rel="stylesheet" type="text/css" href="../../style.css">
+		<link rel="stylesheet" href="../../scripts/jquery.mobile-1.0.1.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+		<title>RNLI</title>
+	<!--apple meta-->
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />
+		<link rel="apple-touch-icon" href="../../../images/ICON.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="apple-touch-startup-image" href="../../../images/SPLASH.png">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--j queer eee-->
+		<script type="text/javascript" src="../../scripts/jquery-1.6.4.js"></script>
+		<script type="text/javascript" src="../../scripts/jquery.mobile-1.0.1.min.js"></script>
+		<script src="../../scripts/yui-min.js"></script>
+	<!--menu fix-->				
+		<script type="text/javascript">	
+			YUI().use("scrollview", function(Y) {
+			var scrollview = new Y.ScrollView({
+			srcNode:"#content",
+			height:"20em"
+			});
+			});	
+		</script>	
+	</head>
+
+	<body>
+		<div id="header">
+			<img align="right" id="headflag" src="../../images/sprite.png"/>
+			<img align="left" id="logo" src="../../images/logohead.png"/>
+			ENTONOX KIT
+		</div>
+		<div id="content" class="hkit">
+			<div id="viewlink">
+				<a href="javascript:history.go(-1)"class="backbtn">Back</a>	 <!--back button non ajax--> 
+				<a href="javascript:history.go(-2)"class="next">Home</a>
+			</div>
+<!------------------------------------------------------------------------------------------------->
+			<div class="mapsize">
+				<div id="ENmap1">
+					<ul>
+						<li id="ENmap1A"><a href="E2.html">Entonox check cards</a></li>
+						<li id="ENmap1B"><a href="E5.html">Mask</a></li>
+						<li id="ENmap1C"><a href="E5.html">Filter</a></li>
+						<li id="ENmap1D"><a href="E5.html">Mouth peice</a></li>
+						<li id="ENmap1E"><a href="E6.html">Heat pack</a></li>
+					  	<li id="ENmap1F"><a href="E6.html">Thermometere</a></li>
+					  <li id="ENmap1G"><a href="E4.html">Pipe</a></li>
+				  </ul>
+				</div>
+			</div>
+<!------------------------------------------------------------------------------------------------->
+		</div>								
+		<div id="menu" class="menu">
+			<ul>
+				<a href="../../mcq.html"><li id="mcqbutton" class="menubutton"><img src="../../images/quizicon_sml.png"/></li></a>
+				<a href="../../triage.html"><li id="triagebutton" class="menubutton"><img src="../../images/triageicon_sml.png"/></li></a>
+				<a href="../../pa/pa-home.html"><li id="patbutton" class="menubutton"><img src="../../images/assessmenticon_sml.png"/></li></a>
+				<a href="../kit-home.html"><li id="kitbutton" class="menubutton"><img src="../../images/bagicon_sml.png"/></li></a>
+				<a href="../../numbers.html"><li id="numbersbutton" class="menubutton"><img src="../../images/infoicon_sml.png"/></li></a>
+			</ul>
+		</div>
+	</body>
+</html>
+<!--------------------------------------------------------------------------------------------------------------------------------->
+

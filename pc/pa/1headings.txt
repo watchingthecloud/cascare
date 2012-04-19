@@ -1,0 +1,6 @@
+conscious injured = CI
+injury LTB        = ILTB
+uncon ill patient = UIP
+Manual airways manouvres = MAM
+
+

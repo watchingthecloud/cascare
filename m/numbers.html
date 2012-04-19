@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html manifest="cache.manifest?v=4">
+	<!--		Designer: Rory McLeish at Winchester University, Digital Media Design, DMD12	(shinyrory@gmail.com)		--><!--		Developers : Andrew "Tez" Grant (tez.grant@gmail.com) and Sean Duffy (sean1906@gmail.com)					--><!--		Date : 14/03/2012													 										--><!--		All code (c) 2012 Sean Duffy and Andrew "Tez" Grant. all rights reserved									--><!--		Design (c) 2012 Rory McLeish. all rights reserved															-->	<head>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="scripts/jquery.mobile-1.0.1.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>RNLI</title>
+	<!--apple meta-->
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />
+		<link rel="apple-touch-icon" href="images/ICON.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="apple-touch-startup-image" href="images/SPLASH.png">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--j queer eee-->
+<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" src="scripts/jquery.mobile-1.0.1.min.js"></script>
+		<script src="scripts/yui-min.js"></script>
+	<!--menu fix-->				
+		<script type="text/javascript">	
+			YUI().use("scrollview", function(Y) {
+			var scrollview = new Y.ScrollView({
+			srcNode:"#content",
+			height:"20em"
+			});
+			});	
+		</script>
+		
+	</head>
+
+	<body >
+	<div data-role="page">
+		<div id="header">
+			<img align="right" id="headflag" src="images/sprite.png"/>
+			<img align="left" id="logo" src="images/logohead.png"/>Contact Information
+		</div>
+		<div id="content" data-scroll="y">
+			<div id="numbers">
+				<ul>
+					<li id="contacts1" class="title">Information and Support</li>
+					<li id="contacts7" class="contactinfo">For general inormation please visit the RNLI Website.<br/></li>
+					<a href="http://www.rnli.org.uk/" rel="external"><li id="contacts2" class="contacts">Click here to visit the RNLI Website.</li></a>
+					<li id="contacts8" class="contactinfo">Any staff members please log in here.<br/></li>
+					<a href="http://www.rnli2.org.uk/" rel="external"><li id="contacts2" class="contacts">Staff Login</li></a>
+					<li id="contacts3" class="contactinfo">If you have a query that is not answered by the RNLI website then you can email Paul Savage, RNLI Clinical Lead.<br/></li>
+					<a href="mailto:paul_savage@rnli.org.uk"><li id="contacts4" class="contacts">Click here to email Paul Savage, RNLI Clinical Lead.</li></a>
+					<li id="contacts5" class="contactinfo">For more urgent enquiries you can call Paul Savage, RNLI Clinical Lead.<br/></li>
+					<a href="tel:07973149481"  class="call"><li id="contacts6" class="contacts">Click here to call Paul Savage, RNLI Clinical Lead.</li></a>
+					<li id="contacts7" class="contactinfo">This App was designed by Rory Mcleish at Winchester University DMD12<br/></li>
+					<a href="http://dmd-winchester.org.uk/dmd/"><li id="contacts8" class="contacts">Click here to visit the DMD Winchster Website</li></a>
+					<li id="contacts9" class="contactinfo"><br/>This App was built by Tez Grant and Sean Duffy</li>
+					<a href="http://www.parasitesatemybrain.com/"><li id="contacts10" class="contacts">Click here to visit the developers website.</li></a>
+				</ul>
+			</div>
+		</div>
+<!---------------------------------- end active view ----------------------------------------->		
+		<div  data-role="footer">	
+			<div id="menu" class="menu">
+				<ul>
+				<a href="mcq.html"><li id="mcqbutton" class="menubutton"><img src="images/quizicon_sml.png"/></li></a>
+				<a href="triage.html"><li id="triagebutton" class="menubutton"><img src="images/triageicon_sml.png"/></li></a>
+				<a href="pa/pa-home.html"><li id="patbutton" class="menubutton"><img src="images/assessmenticon_sml.png"/></li></a>
+				<a href="kit/kit-home.html"><li id="kitbutton" class="menubutton"><img src="images/bagicon_sml.png"/></li></a>
+				<a href="numbers.html"><li id="numbersbutton" class="menubutton"><img src="images/infoicon_sml.png"/></li></a>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+
