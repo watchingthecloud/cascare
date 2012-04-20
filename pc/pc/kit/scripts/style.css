@@ -1,0 +1,197 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(images/background.gif);
+
+}
+#header{
+margin: 0 auto;
+float: top;
+height: 45px;
+position: relative;
+width: 100%;
+font: 14pt Ariel;
+font-family: sans-serif;
+padding-top: 10px;
+text-align: center;
+border: 1px solid #2A2A2A /*{a-bar-border}*/;
+background: #01326B /*{a-bar-background-color}*/;
+color: white /*{a-bar-color}*/;
+font-weight: bold;
+text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 1px /*{a-bar-shadow-radius}*/ black /*{a-bar-shadow-color}*/;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #0e2745 /*{a-bar-background-start}*/), to( #01326b /*{a-bar-background-end}*/));
+background-image: -webkit-linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+background-image: -moz-linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+background-image: -ms-linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+background-image: -o-linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+background-image: linear-gradient(#0e2745 /*{a-bar-background-start}*/, #01326b /*{a-bar-background-end}*/);
+border-image: initial;
+}
+
+/* <BG SPRITE .ECT> */
+
+
+
+
+.title{
+	margin: 0 auto; 
+	font-size: 16pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+}
+/* </ END BG SPRITE .ECT> */
+
+/* <JQ mobile page data roll formating needed for all pages> */
+#view{
+	width: 100%;
+}
+
+#viewlink{	
+	text-decoration:none; 
+	color:black; 
+	font-size:18px; 
+	font-family: sans-serif;
+	text-align:center; 
+	margin-left:auto; 
+	margin-right:auto; 
+	width:100%;
+}
+
+#frame{
+
+}
+/* </END page JQ shash> */
+
+/* </CONTENT> */
+
+
+/* <MENU FOOTER> */
+.menu{
+
+	position: fixed;
+	bottom: 0px;
+}
+
+#menu li{
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	height: 63px;
+}
+#mcqbutton{
+	width: 20%;
+}
+#triagebutton{
+	width: 20%;
+}
+#patbutton{
+	width: 20%;
+}
+#kitbutton{
+	width: 20%;
+}
+#numbersbutton{
+	width: 20%;
+}
+/* </MENU FOOTER> */
+
+/* <KITBAG> */
+#kitbag{
+	text-align: center;
+	height: 320px;
+	position: relative;
+	background: rgba(0, 255, 56, 0);
+	color: rgba(0, 255, 56, 0);
+	width: 300px;
+	left: 0px;
+	top: 10px;
+}
+
+
+.list{
+	margin: 0 auto; 
+	font-size: 11pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+	height: 31px;
+	background-image: url(images/sprite.png);
+	background-position: -0px -783px;
+	background-repeat: no-repeat;
+}
+.text{
+	margin: 0 auto; 
+	font-size: 11pt;
+	font-family: sans-serif;
+	color: #424242;
+	height: 100%;
+    text-align:left;
+	
+}
+.pic{
+	margin: 0 auto; 
+	font-size: 11pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+	height: 100%;
+
+}
+.button{
+	margin: 0 auto; 
+	font-size: 11pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+	height: 31px;
+	background-image: url(images/sprite.png);
+	background-position: -0px -850px;
+	background-repeat: no-repeat;
+	list-style-type: none;
+    z-index:1;
+	
+}
+.mask{
+	margin: 0 auto; 
+	font-size: 11pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	background:rgba(255,100,55,0.5);
+	height: 31px;
+	list-style-type: none;
+    z-index:7;
+	
+}
+.toggleLink{
+    position:relative;
+	margin: 0 auto; 
+	font-size: 11pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+	height: 31px;
+	
+	top:20px;
+	z-index:2;
+	
+}
+.buttontxt{
+	text-align: center;
+	margin: 0 auto; 
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: #424242;
+	height: 12px;
+	padding-bottom: 7px;
+}
+.bagbtn{
+	text-align: center;
+	margin: 0 auto; 
+    padding:15px;
+	margin-top: 15px;
+}
+/* </KITBAG> */

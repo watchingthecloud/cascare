@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html manifest="cache.manifest?v=4">
+	<!--		Designer: Rory McLeish at Winchester University, Digital Media Design, DMD12	(shinyrory@gmail.com)		--><!--		Developers : Andrew "Tez" Grant (tez.grant@gmail.com) and Sean Duffy (sean1906@gmail.com)					--><!--		Date : 14/03/2012													 										--><!--		All code (c) 2012 Sean Duffy and Andrew "Tez" Grant. all rights reserved									--><!--		Design (c) 2012 Rory McLeish. all rights reserved															-->	<head>
+		<title>RNLI</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="scripts/jquery-1.6.4.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.3.2.js"></script>
+		<script type="text/javascript">
+			var jQuery_1_3_2 = jQuery.noConflict(true);
+		</script>
+		<script type="text/javascript" src="scripts/jQuizMe.js"></script>
+		<script src="scripts/yui-min.js"></script>
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />	
+		<link rel="apple-touch-icon" href="images/ICON.png">	
+		<meta name="apple-mobile-web-app-capable" content="yes">	
+		<link rel="apple-touch-startup-image" href="images/SPLASH.png">	
+		<script type="text/javascript">
+			YUI().use("scrollview", function(Y) {
+			var scrollview = new Y.ScrollView({
+			srcNode:"#content",
+			height:"20em"
+			});
+			});
+		</script>
+	</head>
+	<body>
+			<div id="header">
+				<img align="right" id="headflag" src="images/sprite.png"/>
+				<img align="left" id="logo" src="images/logohead.png"/>
+				Multiple Choice Quiz, All Questions
+			</div>
+		<div id="maincontainer">
+			<div id="content">
+				<div id="frame">
+<!-------------------------------------- active view ----------------------------------------->
+						<div id="quizArea"/>
+<script type="text/javascript">
+	jQuery_1_3_2( function(jQuery_1_3_2){
+	var quizMulti = {
+    multiList:
+	[	
+		/* Core Questions */
+			{ ques: "The Golden hour is:", ans: "The optimum time for survival from traumatic injury to arrival at surgery", ansSel : [ "The time it takes a patient to call for help and for help to arrive", "The time at which the injury occurs", "A unit of time named after James Golden RN Surgeon" ] },
+			{ ques: "'Mechanism of Injury' helps when thinking about", ans: "All these options", ansSel : [ "Injury patterns", "Scene safety", "Hidden injuries" ] },
+			{ ques: "Patient assessment - DR(c)ABCDE: What does the first D stand for?", ans: "Dangers", ansSel : [ "Deformity", "Diagnosis", "Disability" ] },
+			{ ques: "At the first stage of patient assessment (D) what might some of your considerations be:", ans: "All these options", ansSel : [ "Crowds", "Electricity", "Traffic" ] },
+			{ ques: "When approaching the scene of an incident, your safety is more important than anyone else.", ans: "True", ansSel : [ "False" ] },
+			{ ques: "At the second stage of patient assessment (R).  What does the P stand for in the AVPU scale?", ans: "Patient responds to a painful stimulus", ansSel : [ "Patient needs pressure applied to a wound", "Patient complains of pain", "Patient has passed out" ] },
+			{ ques: "At the third stage of patient assessment (c) the casualty carer must:", ans: "Control any life threatening bleed", ansSel : [ "Check for a pulse", "Call for help", "Check peripheral capillary refill (fingernail)" ] },
+			{ ques: "The most common cause of airway obstruction in an unconscious patient is the tongue.", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Whilst assessing the airway you hear the patient snoring. This means:", ans: "Tongue obstructing airway", ansSel : [ "Fluid in the airway", "Patient has asthma", "Patient is asleep and requires a blanket" ] },
+			{ ques: "Opening the airway with a 'jaw thrust' is best for immersed patients with no injuries", ans: "False", ansSel : [ "True" ] },
+			{ ques: "The patients breathing rate should be checked for:", ans: "10 seconds", ansSel : [ "2 seconds", "5 seconds", "1 minute" ] },
+			{ ques: "If you find that the patient is not breathing (only one patient - no requirement for triage), you should:", ans: "Commence CPR", ansSel : [ "Declare them dead", "Move onto the C stage of the assessment process", "Turn them into the recovery position" ] },
+			{ ques: "Which breathing rate (in a minute) would indicate Big Sick?", ans: "36", ansSel : [ "12", "24", "All these options" ] },
+			{ ques: "In a warm environment, a central capillary refill of 4 secs means:", ans: "The patient is Big Sick", ansSel : [ "The heart has stopped", "It means nothing", "The patient is Little Sick" ] },
+			{ ques: "On the head to toe examination you find the patient is pale, cold and clammy. What could this mean?", ans: "All these options", ansSel : [ "They may have a heart problem", "They may be bleeding somewhere", "They may be Big Sick" ] },
+			{ ques: "When asking the patient for a history using AMPLE, the P stands for:", ans: "Past relevant medical history", ansSel : [ "Pain experienced by the patient", "Pulse rate", "Poisons taken" ] },
+			{ ques: "What category would you place a patient in during a triage sieve who is unconscious with respiration rate of 24 breaths per minute and capillary refill time of 5 seconds?", ans: "P1", ansSel : [ "P2", "P3", "Dead(P4)" ] },
+			{ ques: "Oxygen should be administered for which of the following casualties:", ans: "All these options", ansSel : [ "Unconscious casualty", "Non-breathing casualty", "A casualty with cap refill delayed to 6 seconds" ] },
+			{ ques: "It doesn't matter if the Oxygen cylinder becomes contaminated with salt water?", ans: "False", ansSel : [ "True" ] },
+			{ ques: "When should you consider using a plastic (OP/guedel) airway?", ans: "All these options", ansSel : [ "An unconscious patient without a gag reflex", "A non- breathing casualty needing CPR", "An unconscious patient needing ventilatory support (assisted breathing)" ] },
+			{ ques: "A plastic (OP/guedel) airway is sized by measuring:", ans: "From the corner of the mouth to the lower ear", ansSel : [ "From the front teeth to the Adams apple", "The length of the patients thumb", "The length of patient's tongue" ] },
+			{ ques: "Which of these statements is correct about adult CPR?", ans: "100 -120 compressions / min, ratio 30comp: 2 breaths, depth 5-6 cm", ansSel : [ "100 -120 compressions / min, ratio 30comp: 2 breaths, depth 3-4 cm", "80 - 100 compressions / min, ratio 30comp: 2 breaths, depth 10 cm", "80 - 100 compressions / min, ratio 15comp: 2 breaths, depth 4-5 cm" ] },
+			{ ques: "What is the most important consideration in the care of an unconscious casualty?", ans: "Maintaining an airway", ansSel : [ "Keeping them warm", "Talking to them", "Checking central capillary refill" ] }, 
+			{ ques: "Which is a Little Sick marker?", ans: "Respiration rate of 2 breaths in 10 seconds", ansSel : [ "P on AVPU scale", "Blue skin colour", "Central capillary refill time of 3 seconds" ] },
+			{ ques: "Which is a Big Sick marker?", ans: "V on the AVPU scale", ansSel : [ "Central capillary refill of 2 seconds", "Pink skin colour", "Respiration rate of 24 in a minute" ] },
+			
+		/*Illness questions*/
+			{ ques: "A patient suffering non traumatic cardiac chest pain with no previous history should", ans: "All options", ansSel : [ "Be given 300mg Aspirin", "Be given Entonox", "Be given GTN spray" ] },
+			{ ques: "What is the best position for a patient suffering non traumatic cardiac chest pain?", ans: "The W position and kept head up", ansSel : [ "The tripod position, standing leaning forwards", "Head up in the Neil Robertson", "Head down in the Orange basket stretcher" ] },
+			{ ques: "Entonox can be given to a patient suffering with non traumatic cardiac chest pain:", ans: "True", ansSel : [ "False" ] },
+			{ ques: "The best position for a patient suffering with asthma is laying down", ans: "False", ansSel : [ "True" ] },
+			{ ques: "A patient suffering an asthma attack should:", ans: "Be encouraged to take their own medication", ansSel : [ "Not be allowed to take their own medication", "Be given Entonox", "Be given Aspirin" ] },
+			{ ques: "An unconscious ill patient can be given glucose gel. ", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Anaphylactic shock is caused by: ", ans: "Allergic reaction", ansSel : [ "Blood loss", "Brain injury", "Spinal cord injury" ] },
+			{ ques: "A severe allergic reaction can cause the patient to look red, flushed and swollen.", ans: "True", ansSel : [ "False" ] },
+			{ ques: "A recently surfaced diver complains of a deep dull shoulder ache, and asks for some form of painkiller. Do you:", ans: "Offer Oxygen", ansSel : [ "Offer Aspirin", "Offer Entonox", "Offer Paracetamol" ] },
+			{ ques: "A diver who shows symptoms of decompression sickness (the bends) but is Little Sick on assessment should be transported:", ans: "As level as possible on a stretcher", ansSel : [ "Head up on a stretcher", "Head down on a stretcher", "It doesn't matter as he is Little Sick" ] },
+			{ ques: "A patient who is 'fitting' should be advised to go to hospital if:", ans: "All options", ansSel : [ "The fit lasts more than five minutes", "It is their first ever fit", "If they have repeated fits" ] },
+			{ ques: "After a fit, an epileptic patient will always recover very quickly", ans: "False", ansSel : [ "True" ] },
+			
+		/* Immersion Questions */	
+			{ ques: "Hypothermic, unconscious casualties should be warmed:", ans: "False", ansSel : [ "True" ] },
+			{ ques: "The re-warming of hypothermic casualties starts in hospital:", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Cold conscious casualties can be warmed stood in a hot shower ", ans: "False", ansSel : [ "True" ] },
+			{ ques: "A patient who has been immersed for 30 minutes or more should be treated for hypothermia", ans: "True", ansSel : [ "False" ] },
+			{ ques: "A patient who is cold, can be re-warmed.", ans: "True", ansSel : [ "False" ] },
+			{ ques: "When re-warming a cold patient, you can:", ans: "Re-warm them gradually", ansSel : [ "Give them a hot water bottle", "Re-warm them stood in a hot shower", "Re-warm them as quickly as possible" ] },
+			{ ques: "Drowned casualties should be evacuated from the water:", ans: "As quickly as possible", ansSel : [ "Slowly so not to cause them injury", "As level as possible", "Via helicopter" ] },
+			{ ques: "Once a drowned casualty has been rescued from the water you should:", ans: "Assess them using DR(c)ABCDE", ansSel : [ "Start CPR immediately", "Certify them dead", "Put them in the recovery position" ] },
+			{ ques: "A patient has had a near drowning experience you should:", ans: "Make them aware of Late Onset Near Drowning", ansSel : [ "Give them Oxygen if they are Little sick", "Encourage them to vomit to get all the water out of them", "Put them in the recovery position" ] },
+			{ ques: "A patient suffering with Heat Stroke should be:", ans: "Rapidly cooled", ansSel : [ "Given paracetamol", "Given sips of water", "All options" ] },
+			{ ques: "A patient complains of feeling sick, hot, sweaty and tired after spending the day sat in the sunshine.  You should:", ans: "All options", ansSel : [ "Encourage them to sip water", "Offer them Paracetamol", "Lie them down and raise their legs" ] },
+			{ ques: "A patient suffering with Heat Exhaustion should be rapidly evacuated to hospital:", ans: "False", ansSel : [ "True" ] },
+			
+		/* Injury Questions */	
+			{ ques: "Entonox can be given to a patient who has a head injury", ans: "False", ansSel : [ "True" ] },
+			{ ques: "Entonox MAY be given safely to patients with:", ans: "All options", ansSel : [ "Burns and scalds", "Non traumatic cardiac chest pain", "Fractured lower limbs" ] },
+			{ ques: "Having applied a trauma dressing to a wound you notice the dressing SLIGHTLY bleeds through. What do you do next:", ans: "Use the windlass technique to apply direct pressure ", ansSel : [ "Use indirect pressure and then apply another trauma dressing", "Use indirect pressure and then apply a tourniquet", "Take off the dressing and look at the wound" ] },
+			{ ques: "The best method to control bleeding for a patient with multiple serious injuries to a limb and life threatening blood loss is:", ans: "Indirect pressure and application of a tourniquet", ansSel : [ "Elevation of the injured limb", "Direct pressure to all bleeding points with a trauma dressing", "Ignore the bleeding and monitor airway" ] },
+			{ ques: "Sea water can be used to cool burns:", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Clothing stuck to a burn should be removed:", ans: "False", ansSel : [ "True" ] },
+			{ ques: "A patient has been near an explosion. He has no facial hair and soot around his mouth. He is breathing at a rate of 36 per minute and wheezing. He tells you he has immense pain: What would you do?", ans: "All options", ansSel : [ "Grade as Big Sick", "Administer oxygen at 15 litres/min", "Organise rapid evacuation" ] },
+			{ ques: "When treating a fractured jaw, your initial priority would be to:", ans: "Ensure airway is clear", ansSel : [ "Collect lost teeth", "Prevent vomiting", "Administer Entonox" ] },
+			{ ques: "Any bleeding from an open fracture site must be controlled first:", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Bruising around the eyes (racoon eyes) can indicate:", ans: "Head Injury", ansSel : [ "Rib Injury", "Neck injury", "Perforated eardrums" ] },
+			{ ques: "When fitting a collar to a patient who is lying down, what should you do?", ans: "Hold the head and neck in neutral alignment", ansSel : [ "Never hold the head and neck in neutral alignment", "Size the collar by measuring from the ear to the jaw", "Pull or traction the head before fitting " ] },
+			{ ques: "What would you do with a patient suffering with a significant head injury:", ans: "Apply a collar", ansSel : [ "Give Oxygen, even if Little Sick", "Transport carefully, head to stern, in the orange basket stretcher", "Give entonox" ] },
+			{ ques: "When might you suspect a spinal injury:", ans: "All options", ansSel : [ "Patient ejected from speedboat at 30 knots", "Patient has fallen a distance in excess of three times their height", "Male patient demonstrates an unwanted erection" ] },
+		/*Core picture questions*/
+			{ ques: "What piece of equipment is missing from this picture?", ans: "Personal Protective Equipment", ansSel : [ "Trauma dressing", "Sea sickness tablets", "Fracture straps" ], image: "images/media/CS4.JPG" },
+			{ ques: "Which manual airway manoeuvre is being used here?", ans: "Head tilt chin lift", ansSel : [ "Recovery position", "Jaw thrust", "None" ], image: "images/media/CS18.JPG" },
+			{ ques: "Opening the airway with the technique demonstrated is NOT good for which type of patient?", ans: "Injured patients", ansSel : [ "Immersion patients", "Illness patients", "All patients" ], image: "images/media/CS18.JPG" },
+			{ ques: "Which manual airway manoeuvre is being used here?", ans: "Jaw thrust", ansSel : [ "Recovery position", "None", "Head tilt chin lift" ], image: "images/media/CS21.JPG" },
+			{ ques: "Opening the airway with the technique demonstrated is good for which type of patient?", ans: "Injured patients", ansSel : [ "All patients", "Illness patients", "Immersion Patients" ], image: "images/media/CS21.JPG" },
+			{ ques: "The measuring points used for sizing a plastic airway for a patient are :- ", ans: "Corner of mouth to lower ear", ansSel : [ "Length of patient's tongue", "Size of patient's thumb", "Corner of jaw to mouth" ], image: "images/media/CS16.JPG" },
+			{ ques: "When using the handheld suction on a patient, a clear view of the airway and end of the suction catheter  is required:", ans: "True", ansSel : [ "False" ], image: "images/media/CS10.JPG" },
+			{ ques: "What are the crew members checking in this picture?", ans: "Breathing rate", ansSel : [ "Central capillary refill", "Extremity capillary refill", "Airway" ], image: "images/media/CS5.JPG" },
+			{ ques: "Putting one hand on the abdominal area can assist with obtaining a breathing rate", ans: "True", ansSel : [ "False" ], image: "images/media/CS5.JPG" },
+			{ ques: "What are the crew members checking in this picture?", ans: "Central capillary refill", ansSel : [ "Breathing rate", "Extremity capillary refill", "Airway" ], image: "images/media/CS20.JPG" },
+			{ ques: "Oxygen should be given to all patients.", ans: "False", ansSel : [ "True" ], image: "images/media/CS26.JPG" },
+			{ ques: "What piece of kit is being used in the picture?", ans: "Free flow mask", ansSel : [ "Bag valve mask", "Plastic airway", "Handheld suction unit" ], image: "images/media/CS26.JPG" },
+			{ ques: "What does the card shown relate to", ans: "Patient's medical history", ansSel : [ "Recording drugs given by casualty carer", "Treatment guidelines", "Big 3 monitoring" ], image: "images/media/CS12.JPG" },
+			{ ques: "How often should the Big 3 be monitored in a little sick patient?", ans: "Every 5 - 10 minutes ", ansSel : [ "Every minute", "Every 2 - 3 minutes", "Every 3 - 5 minutes" ], image: "images/media/CS2.JPG" },
+			{ ques: "How often should the Big 3 be monitored in a big sick patient?", ans: "Every 2 minutes", ansSel : [ "Every minute", "Every 3 minutes", "Every 5 minutes" ], image: "images/media/CS2.JPG" },
+			{ ques: "When using the bag valve mask on a patient how is a good seal (the mask over the nose and mouth) achieved?", ans: "Using a 'C' grip with finger and thumb ", ansSel : [ "Pushing it down forcefully onto the face", "Lightly placing near the mouth and nose", "It does not need a good seal" ], image: "images/media/CS17.JPG" },
+			{ ques: "The bag valve mask is also used for patient's who require assisted breathing", ans: "True", ansSel : [ "False" ], image: "images/media/CS22.JPG" },
+			{ ques: "When administering chest compressions on a child, you should use one hand.", ans: "True", ansSel : [ "False" ], image: "images/media/CS29.JPG" },
+			{ ques: "When administering chest compressions on a baby, you should use one hand.", ans: "False", ansSel : [ "True" ], image: "images/media/CS31.JPG" },
+			{ ques: "When using the bag valve mask you should", ans: "Squeeze until the first rise of the chest and then release.", ansSel : [ "Use your knee to get required amount of air into the patient", "Always use two hands to squeeze it", "Squeeze the bag as forcefully as you can" ], image: "images/media/CS30.JPG" },
+		/*illness picture questions*/
+			{ ques: "Little sick divers should be kept level and administered oxygen", ans: "True", ansSel : [ "False" ], image: "images/media/ILL31.JPG" },
+			{ ques: "If a diver who is suffering with decompression sickness(the bends) and is little sick, but feels better with oxygen you can stop casualty care treatment", ans: "False", ansSel : [ "True" ], image: "images/media/ILL31.JPG" },
+			{ ques: "Bleeding from the nose in a rapidly surfaced diver can be due to:", ans: "Barotrauma of the lungs (e.g. popped lungs)", ansSel : [ "Decompression sickness", "Cardiac chest pain", "Drowning" ], image: "images/media/ILL33.JPG" },
+			{ ques: "What position has the patient in the picture adopted?", ans: "Tripod", ansSel : [ "'W' position", "Slumped", "Prone (lying face down)" ], image: "images/media/ILL29.JPG" },
+			{ ques: "A patient suffering with shortness of breath due to their asthma, should be treated with:", ans: "Oxygen via free flow mask if big sick ", ansSel : [ "Oxygen via free flow mask at all times", "Entonox via self administration", "Nothing, they will improve on own" ], image: "images/media/ILL29.JPG" },
+			{ ques: "A diabetic patient may appear drowsy and pale in colour.", ans: "True", ansSel : [ "False" ], image: "images/media/ILL34.JPG" },
+			{ ques: "A stroke patient may appear drowsy and pale.", ans: "False", ansSel : [ "True" ], image: "images/media/ILL34.JPG" },
+			{ ques: "The position adopted by the patient in the picture is called:", ans: "'W' position", ansSel : [ "Tripod", "Slumped", "Prone (lying face down)" ], image: "images/media/ILL36.JPG" },
+			{ ques: "The patient is complaining of non traumatic (not injured) chest pain and has a capillary refill of >3 seconds.  What treatment card may help?", ans: "Card 5", ansSel : [ "Card 6", "Card 7", "Card 11" ], image: "images/media/ILL36.JPG" },
+			{ ques: "Look at the patient in the picture, they are swollen with a breathing rate of 36 bpm and a capillary refill of 4 seconds.  What might they be suffering with?", ans: "Allergic reaction", ansSel : [ "Asthma", "Cardiac chest pain", "Epilepsy" ], image: "images/media/ILL35.JPG" },
+			{ ques: "When a patient is fitting, what is your main priority?", ans: "Protecting them from injuring themselves", ansSel : [ "Maintaining an airway", "Keeping hold of them until fit ends", "Giving them a cup of tea" ], image: "images/media/ILL37.JPG" },
+		/*immersion picture questions*/
+			{ ques: "This patient has been immersed for greater than 30mins, how would you remove her from the water ideally?", ans: "Lift her out horizontally and carefully", ansSel : [ "Rapidly and by any means", "Get her to help herself out", "Get her to swim to shore" ], image: "images/media/IMM37.JPG" },
+			{ ques: "The picture shows an unconscious, face down, drowned patient.  The most important thing to do is to remove him from the water as quickly as possible.", ans: "True", ansSel : [ "False" ], image: "images/media/IMM42.JPG" },
+			{ ques: "This patient has had a near drowning experience, what would your treatment be?", ans: "All options", ansSel : [ "Protect and insulate", "Evacuate rapidly to hospital", "Make them aware of late onset near drowning" ], image: "images/media/IMM43.JPG" },
+			{ ques: "You assess this drowned patient and find they are not breathing. A bystander says they have been face down for 20 mins.  What would you do?", ans: "Start CPR", ansSel : [ "Put them in the recovery position", "Give them oxygen via free flow mask", "Certify them dead" ], image: "images/media/IMM42.JPG" },
+			{ ques: "This patient is shivering and telling you he has been in the water for fifteen minutes.  What would your treatment be?", ans: "Re-warm and cover their head", ansSel : [ "Rub them vigorously", "Give them a very hot cup of tea", "Get them to go for a run" ], image: "images/media/IMM45.JPG" },
+			{ ques: "Patient is unresponsive, breathing, rigid and has been in the water for 45 minutes.  What should you do?", ans: "Maintain their airway", ansSel : [ "Certify them dead", "Re warm them", "Start CPR" ], image: "images/media/IMM38.JPG" },
+			{ ques: "Patient is unresponsive, not breathing, rigid and has been in the water for 45 minutes.  What should you do?", ans: "Start CPR", ansSel : [ "Maintain their airway", "Re warm them", "Certify them dead" ], image: "images/media/IMM39.JPG" },
+			{ ques: "This patient is suffering with heat stroke, should you:-", ans: "All options", ansSel : [ "Organise rapid evacuation", "Rapidly cool them", "Give them oxygen at 15 litres per minute" ], image: "images/media/IMM40.JPG" },
+			{ ques: "A heat stroke patient will be sweating, confused and red.", ans: "False", ansSel : [ "True" ], image: "images/media/IMM40.JPG" },
+			{ ques: "A heat exhausted patient can be offered paracetamol, what should you check before you do this?", ans: "If they are allergic to paracetamol", ansSel : [ "Whether they have eaten", "Whether they take aspirin daily", "If they have any stomach problems" ], image: "images/media/IMM41.JPG" },
+		/*injury picture questions*/
+			{ ques: "What is the treatment you would give for the injury in the picture?", ans: "Direct pressure onto wound with a dressing and elevation", ansSel : [ "Leave it open to the air to form a scab", "Apply a tourniquet above the wound", "Apply a trauma dressing with a windlass straight away" ], image: "images/media/INJ60.JPG" },
+			{ ques: "How would you apply a dressing to the wound in the picture?", ans: "Build up dressings around glass before applying trauma dressing", ansSel : [ "Apply a trauma bandage over wound and wrap tightly", "Apply a tourniquet above the injury", "Pull out glass and apply trauma bandage on afterwards" ], image: "images/media/INJ71.JPG" },
+			{ ques: "How would you treat the patient in this picture?", ans: "Hold head first then dress wound and apply a collar", ansSel : [ "Dress the wound and advise patient to go to hospital", "Ask patient to lie down and then hold head", "Get the patient to hold a dressing over wound" ], image: "images/media/INJ50.JPG" },
+			{ ques: "If a life threatening bleed such as the one in the picture is not controlled with indirect pressure, what should you apply?", ans: "Combat application tourniquet", ansSel : [ "Trauma dressing with a windlass", "Ambulance dressing", "More pressure" ], image: "images/media/INJ81.JPG" },
+			{ ques: "How many frac straps should be used for lower limb fractures?", ans: "5 and pelvic strap", ansSel : [ "3 and pelvic strap", "4 and pelvic strap", "6 and pelvic strap" ], image: "images/media/INJ45.JPG" },
+			{ ques: "What makes this patient a priority to evacuate?", ans: "Airway swelling could occur", ansSel : [ "Possibility of pain getting worse", "Clothing could be stuck to the burn", "Patient is not a priority" ], image: "images/media/INJ42.JPG" },
+			{ ques: "Bruising around the eyes and bleeding from the nose as in the picture could be signs of what injury?", ans: "Head injury", ansSel : [ "Chest injury", "Spinal injury", "Fractured jaw" ], image: "images/media/INJ58.JPG" },
+			{ ques: "A tourniquet should be applied if a limb has been crushed for more than:-", ans: "15 minutes", ansSel : [ "5 minutes", "10 minutes", "20 minutes" ], image: "images/media/INJ54.JPG" },
+			{ ques: "Embedded objects should be removed.", ans: "False", ansSel : [ "True" ], image: "images/media/INJ43.JPG" },
+			{ ques: "Once applied, a tourniquet should never be released.", ans: "True", ansSel : [ "False" ], image: "images/media/INJ82.JPG" },
+			{ ques: "When approaching this patient, your initial thoughts about mechanism of injury would be:", ans: "Patient is injured", ansSel : [ "Patient is ill", "Patient is immersed", "Patient is dead" ], image: "images/media/INJ57.JPG" },
+			{ ques: "A patient with a chest injury can be offered entonox.", ans: "False", ansSel : [ "True" ], image: "images/media/INJ55.JPG" },
+			{ ques: "When conducting a head to toe survey in the 'E' part of the assessment card, you notice bruising to the left side of the chest.  This could indicate:", ans: "Internal bleeding", ansSel : [ "External bleeding", "Life threatening external bleed", "It is not important" ], image: "images/media/INJ55.JPG" }
+			
+			
+			
+	]
+		};
+	
+	options = {
+		showHTML: true,
+		animationType: 0,
+		showWrongAns: true,
+		title: ""
+};
+
+jQuery_1_3_2("#quizArea").jQuizMe(quizMulti, options);
+});
+</script>
+
+					</div>
+				</div>
+			</div>
+		
+			<div id="menu" class="menu">
+				<ul>
+					<a href="mcq.html"><li id="mcqbutton" class="menubutton"><img src="images/quizicon_sml.png"/></li></a>
+					<a href="triage.html"><li id="triagebutton" class="menubutton"><img src="images/triageicon_sml.png"/></li></a>
+					<a href="pa/pa-home.html"><li id="patbutton" class="menubutton"><img src="images/assessmenticon_sml.png"/></li></a>
+					<a href="kit/kit-home.html"><li id="kitbutton" class="menubutton"><img src="images/bagicon_sml.png"/></li></a>
+					<a href="numbers.html"><li id="numbersbutton" class="menubutton"><img src="images/infoicon_sml.png"/></li></a>
+				</ul>
+			</div>
+	</body>
+</html>

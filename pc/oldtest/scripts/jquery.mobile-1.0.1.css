@@ -1,0 +1,168 @@
+/*
+* jQuery Mobile Framework 1.0.1
+* http://jquerymobile.com
+*
+* Copyright 2011-2012 (c) jQuery Project
+* Dual licensed under the MIT or GPL Version 2 licenses.
+* http://jquery.org/license
+*
+*/
+/* Swatches */
+
+/* A
+-----------------------------------------------------------------------------------------------------------*/
+
+
+/* Structure */
+
+/* links within "buttons" 
+-----------------------------------------------------------------------------------------------------------*/
+
+a.ui-link-inherit {
+	text-decoration: none !important;
+}
+
+
+
+/* Focus state - set here for specificity
+-----------------------------------------------------------------------------------------------------------*/
+
+
+/* unset box shadow in browsers that don't do it right
+-----------------------------------------------------------------------------------------------------------*/
+
+
+/* IMPORTANT!! "page" containers - full-screen views, one should always be in view post-pageload */
+.ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page { top: 0; left: 0; width: 100%; min-height: 100%; position: absolute; display: none; border: 0; }
+.ui-mobile .ui-page-active { display: block; overflow: visible; }
+
+.ui-page-active [data-role=page] {
+display:block !important;
+}
+
+/* loading screen */
+.ui-loading .ui-mobile-viewport { overflow: hidden !important; }
+.ui-loading .ui-loader { display: block; }
+.ui-loading  { overflow: hidden;  }
+.ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }
+.ui-loader h1 { font-size: 15px; text-align: center; }
+.ui-loader .ui-icon { position: static; display: block; opacity: .9; margin: 0 auto; width: 35px; height: 35px; background-color: transparent; }
+
+@-webkit-keyframes spin {
+	from {-webkit-transform: rotate(0deg);}
+  	to {-webkit-transform: rotate(360deg);}
+}
+
+/* Transitions from jQtouch (with small modifications): http://www.jqtouch.com/
+Built by David Kaneda and maintained by Jonathan Stark.
+*/
+.in, .out {
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 350ms;
+}
+
+
+.slide.out {
+	-webkit-transform: translateX(-100%);
+	-webkit-animation-name: slideouttoleft;
+}
+
+.slide.in {
+	-webkit-transform: translateX(0);
+	-webkit-animation-name: slideinfromright;
+}
+
+.slide.out.reverse {
+	-webkit-transform: translateX(100%);
+	-webkit-animation-name: slideouttoright;
+}
+
+.slide.in.reverse {
+	-webkit-transform: translateX(0);
+	-webkit-animation-name: slideinfromleft;
+}
+
+.slideup.out {
+	-webkit-animation-name: dontmove;
+	z-index: 0;
+}
+
+.slideup.in {
+	-webkit-transform: translateY(0);
+	-webkit-animation-name: slideinfrombottom;
+	z-index: 10;
+}
+
+.slideup.in.reverse {
+	z-index: 0;
+	-webkit-animation-name: dontmove;
+}
+
+.slideup.out.reverse {
+	-webkit-transform: translateY(100%);
+	z-index: 10;
+	-webkit-animation-name: slideouttobottom;
+}
+
+.slidedown.out {
+	-webkit-animation-name: dontmove;
+	z-index: 0;
+}
+
+.slidedown.in {
+	-webkit-transform: translateY(0);
+	-webkit-animation-name: slideinfromtop;
+	z-index: 10;
+}
+
+.slidedown.in.reverse {
+	z-index: 0;
+	-webkit-animation-name: dontmove;
+}
+
+.slidedown.out.reverse {
+	-webkit-transform: translateY(-100%);
+	z-index: 10;
+	-webkit-animation-name: slideouttotop;
+}
+
+@-webkit-keyframes slideinfromright {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(0); }
+}
+
+@-webkit-keyframes slideinfromleft {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(0); }
+}
+
+@-webkit-keyframes slideouttoleft {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slideouttoright {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(100%); }
+}
+
+@-webkit-keyframes slideinfromtop {
+    from { -webkit-transform: translateY(-100%); }
+    to { -webkit-transform: translateY(0); }
+}
+
+@-webkit-keyframes slideinfrombottom {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(0); }
+}
+
+@-webkit-keyframes slideouttobottom {
+    from { -webkit-transform: translateY(0); }
+    to { -webkit-transform: translateY(100%); }
+}
+
+@-webkit-keyframes slideouttotop {
+    from { -webkit-transform: translateY(0); }
+    to { -webkit-transform: translateY(-100%); }
+}
+

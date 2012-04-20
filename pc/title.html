@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html manifest="cache.manifest?v=13">
+<!--		Designer: Rory McLeish at Winchester University, Digital Media Design, DMD12 (shinyrory@gmail.com)		-->
+<!--		Developers : Andrew "Tez" Grant (tez.grant@gmail.com) and Sean Duffy (sean1906@gmail.com)					-->
+<!--		Date : 14/03/2012													 										-->
+<!--		All code (c) 2012 Sean Duffy and Andrew "Tez" Grant. all rights reserved									-->
+<!--		Design (c) 2012 Rory McLeish. all rights reserved															-->
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+ 		<link rel="stylesheet" type="text/css" href="kit/map.css">
+		
+		<link rel="stylesheet" href="scripts/jquery.mobile-1.0.1.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+		<title>RNLI</title>
+	<!--apple meta-->
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />
+		<link rel="apple-touch-icon" href="images/ICON.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="apple-touch-startup-image" href="images/SPLASH.png">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--j queer eee-->
+		<script type="text/javascript" src="scripts/jquery-1.6.4.js"></script>
+		<script type="text/javascript" src="scripts/jquery.mobile-1.0.1.js"></script>
+		<script src="scripts/yui-min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-1.3.2.js"></script>
+		<script type="text/javascript">
+		var jQuery_1_3_2 = jQuery.noConflict(true);
+		</script>
+		
+		<script type="text/javascript" src="scripts/jQuizMe.js?v=1"/>
+	<!--menu fix-->				
+		<script type="text/javascript">	
+			YUI().use("scrollview", function(Y) {
+			var scrollview = new Y.ScrollView({
+			srcNode:"#content",
+			height:"20em"
+			});
+			});	
+			
+			$(document).ready(
+			function () {
+			//$('div').removeClass("ui-content ui-mobile-viewport ui-page ui-body-c ui-loader ui-body-a ui-corner-all ui-page ui-body-c ui-page-active ui-header ui-bar-a");
+			});
+		
+		</script>
+
+		
+	</head>
+
+	<body data-scroll="y">
+	<div data-role="page">
+	<!-------------------------------------- active view ----------------------------------------->
+	<div data-role="header">
+		<div id="header">
+			<img align="right" id="headflag" src="images/sprite.png"/>
+			<img align="left" id="logo" src="images/logohead.png"/>Royal National Lifeboat Institution
+		</div>
+	</div>
+	<div data-role="content"> 
+		<div id="content">
+			<div id="title" class="title">Welcome To The RNLI</div>
+			<div id="titletxt" class="titletxt">Casualty Care App 2012</div>	
+			<div id="flag">
+				<img id="flagimg" src="images/logo.png"/>
+			</div>
+			<div id="titletxt" class="titletxt">Images and scenarios used in this app are staged by RNLI personnel.</div>
+		</div>
+	</div>
+		
+	<!---------------------------------- end active view ----------------------------------------->	
+		
+		
+		<div id="menu" class="menu">
+			<ul>
+			<a href="mcq.html"><li id="mcqbutton" class="menubutton" ><img src="images/quizicon_sml.png"/></li></a>
+			<a href="triage.html"><li id="triagebutton" class="menubutton"><img src="images/triageicon_sml.png"/></li></a>
+			<a href="pa/pa-home.html"><li id="patbutton" class="menubutton" ><img src="images/assessmenticon_sml.png"/></li></a>
+			<a href="kit/kit-home.html"><li id="kitbutton" class="menubutton" ><img src="images/bagicon_sml.png"/></li></a>
+			<a href="numbers.html"><li id="numbersbutton" class="menubutton" ><img src="images/infoicon_sml.png"/></li></a>
+			</ul>
+		</div>
+
+</div>
+</body>
+</html>
+
+<!--------------------------------------------------------------------------------------------------------------------------------->
+
+
+

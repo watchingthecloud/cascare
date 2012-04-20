@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html manifest="cache.manifest">
+<!--		Designer: Rory McLeish at Winchester University, Digital Media Design, DMD12	(shinyrory@gmail.com)		--><!--		Developers : Andrew "Tez" Grant (tez.grant@gmail.com) and Sean Duffy (sean1906@gmail.com)					--><!--		Date : 14/03/2012													 										--><!--		All code (c) 2012 Sean Duffy and Andrew "Tez" Grant. all rights reserved									--><!--		Design (c) 2012 Rory McLeish. all rights reserved															-->	<head>
+<title>RNLI</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="scripts/stopwatch.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jQuizMe.js"></script>
+<script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
+<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />	
+<link rel="apple-touch-icon" href="images/ICON.png">	
+<meta name="apple-mobile-web-app-capable" content="yes">	
+<link rel="apple-touch-startup-image" href="images/SPLASH.png">	
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<script type="text/javascript">
+YUI().use("scrollview", function(Y) {
+
+    var scrollview = new Y.ScrollView({
+        srcNode:"#content",
+        height:"20em"
+    });
+
+});	
+</script>
+</head>
+
+<body>
+	<div id="header"><img align="right" id="headflag" src="images/sprite.png"/><img align="left" id="logo" src="images/logohead.png"/>Multiple Choice Quiz, Injury</div>
+	<div id="maincontainer">
+	<div id="content">
+	<div id="frame">
+	<div data-role="page">
+<div id="quizArea"/>
+<script type="text/javascript">
+
+$( function($){
+	var quizMulti = {
+    multiList:
+	[	
+			
+		/* Injury Questions */	
+			{ ques: "Entonox can be given to a patient who has a head injury", ans: "False", ansSel : [ "True" ] },
+			{ ques: "Entonox MAY be given safely to patients with:", ans: "All options", ansSel : [ "Burns and scalds", "Non traumatic cardiac chest pain", "Fractured lower limbs" ] },
+			{ ques: "Having applied a trauma dressing to a wound you notice the dressing SLIGHTLY bleeds through. What do you do next:", ans: "Use the windlass technique to apply direct pressure ", ansSel : [ "Use indirect pressure and then apply another trauma dressing", "Use indirect pressure and then apply a tourniquet", "Take off the dressing and look at the wound" ] },
+			{ ques: "The best method to control bleeding for a patient with multiple serious injuries to a limb and life threatening blood loss is:", ans: "Indirect pressure and application of a tourniquet", ansSel : [ "Elevation of the injured limb", "Direct pressure to all bleeding points with a trauma dressing", "Ignore the bleeding and monitor airway" ] },
+			{ ques: "Sea water can be used to cool burns:", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Clothing stuck to a burn should be removed:", ans: "False", ansSel : [ "True" ] },
+			{ ques: "A patient has been near an explosion. He has no facial hair and soot around his mouth. He is breathing at a rate of 36 per minute and wheezing. He tells you he has immense pain: What would you do?", ans: "All options", ansSel : [ "Grade as Big Sick", "Administer oxygen at 15 litres/min", "Organise rapid evacuation" ] },
+			{ ques: "When treating a fractured jaw, your initial priority would be to:", ans: "Ensure airway is clear", ansSel : [ "Collect lost teeth", "Prevent vomiting", "Administer Entonox" ] },
+			{ ques: "Any bleeding from an open fracture site must be controlled first:", ans: "True", ansSel : [ "False" ] },
+			{ ques: "Bruising around the eyes (racoon eyes) can indicate:", ans: "Head Injury", ansSel : [ "Rib Injury", "Neck injury", "Perforated eardrums" ] },
+			{ ques: "When fitting a collar to a patient who is lying down, what should you do?", ans: "Hold the head and neck in neutral alignment", ansSel : [ "Never hold the head and neck in neutral alignment", "Size the collar by measuring from the ear to the jaw", "Pull or traction the head before fitting " ] },
+			{ ques: "What would you do with a patient suffering with a significant head injury:", ans: "Apply a collar", ansSel : [ "Give Oxygen, even if Little Sick", "Transport carefully, head to stern, in the orange basket stretcher", "Give entonox" ] },
+			{ ques: "When might you suspect a spinal injury:", ans: "All options", ansSel : [ "Patient ejected from speedboat at 30 knots", "Patient has fallen a distance in excess of three times their height", "Male patient demonstrates an unwanted erection" ] },
+		/*injury picture questions*/
+			{ ques: "What is the treatment you would give for the injury in the picture?", ans: "Direct pressure onto wound with a dressing and elevation", ansSel : [ "Leave it open to the air to form a scab", "Apply a tourniquet above the wound", "Apply a trauma dressing with a windlass straight away" ], image: "images/media/INJ60.JPG" },
+			{ ques: "How would you apply a dressing to the wound in the picture?", ans: "Build up dressings around glass before applying trauma dressing", ansSel : [ "Apply a trauma bandage over wound and wrap tightly", "Apply a tourniquet above the injury", "Pull out glass and apply trauma bandage on afterwards" ], image: "images/media/INJ71.JPG" },
+			{ ques: "How would you treat the patient in this picture?", ans: "Hold head first then dress wound and apply a collar", ansSel : [ "Dress the wound and advise patient to go to hospital", "Ask patient to lie down and then hold head", "Get the patient to hold a dressing over wound" ], image: "images/media/INJ50.JPG" },
+			{ ques: "If a life threatening bleed such as the one in the picture is not controlled with indirect pressure, what should you apply?", ans: "Combat application tourniquet", ansSel : [ "Trauma dressing with a windlass", "Ambulance dressing", "More pressure" ], image: "images/media/INJ81.JPG" },
+			{ ques: "How many frac straps should be used for lower limb fractures?", ans: "5 and pelvic strap", ansSel : [ "3 and pelvic strap", "4 and pelvic strap", "6 and pelvic strap" ], image: "images/media/INJ45.JPG" },
+			{ ques: "What makes this patient a priority to evacuate?", ans: "Airway swelling could occur", ansSel : [ "Possibility of pain getting worse", "Clothing could be stuck to the burn", "Patient is not a priority" ], image: "images/media/INJ42.JPG" },
+			{ ques: "Bruising around the eyes and bleeding from the nose as in the picture could be signs of what injury?", ans: "Head injury", ansSel : [ "Chest injury", "Spinal injury", "Fractured jaw" ], image: "images/media/INJ58.JPG" },
+			{ ques: "A tourniquet should be applied if a limb has been crushed for more than:-", ans: "15 minutes", ansSel : [ "5 minutes", "10 minutes", "20 minutes" ], image: "images/media/INJ54.JPG" },
+			{ ques: "Embedded objects should be removed.", ans: "False", ansSel : [ "True" ], image: "images/media/INJ43.JPG" },
+			{ ques: "Once applied, a tourniquet should never be released.", ans: "True", ansSel : [ "False" ], image: "images/media/INJ82.JPG" },
+			{ ques: "When approaching this patient, your initial thoughts about mechanism of injury would be:", ans: "Patient is injured", ansSel : [ "Patient is ill", "Patient is immersed", "Patient is dead" ], image: "images/media/INJ57.JPG" },
+			{ ques: "A patient with a chest injury can be offered entonox.", ans: "False", ansSel : [ "True" ], image: "images/media/INJ55.JPG" },
+			{ ques: "When conducting a head to toe survey in the 'E' part of the assessment card, you notice bruising to the left side of the chest.  This could indicate:", ans: "Internal bleeding", ansSel : [ "External bleeding", "Life threatening external bleed", "It is not important" ], image: "images/media/INJ55.JPG" }
+			
+			
+			
+	]
+		};
+	
+	options = {
+		showHTML: true,
+		animationType: 0,
+		showWrongAns: true,
+		title: ""
+};
+
+$("#quizArea").jQuizMe(quizMulti, options);
+});
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+		<div id="menu" class="menu">
+			<ul>
+			<a href="mcq.html"><li id="mcqbutton" class="menubutton"><img src="images/quizicon_sml.png"/></li></a>
+			<a href="triage.html"><li id="triagebutton" class="menubutton"><img src="images/triageicon_sml.png"/></li></a>
+			<a href="pa/pa-home.html"><li id="patbutton" class="menubutton"><img src="images/assessmenticon_sml.png"/></li></a>
+			<a href="kit/kit-home.html"><li id="kitbutton" class="menubutton"><img src="images/bagicon_sml.png"/></li></a>
+			<a href="numbers.html"><li id="numbersbutton" class="menubutton"><img src="images/infoicon_sml.png"/></li></a>
+			</ul>
+		</div>
+</body>
+</html>
+
